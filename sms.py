@@ -25,3 +25,10 @@ def sms():
                                                                 recipient['cost'])
     except AfricasTalkingGatewayException, e:
         print 'Encountered an error while sending: %s' % str(e)
+        
+    return "hello world"
+
+
+if __name__=="__main__":
+    app.run(debug=True)
+
