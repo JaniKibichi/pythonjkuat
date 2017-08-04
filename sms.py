@@ -1,6 +1,5 @@
 from flask import Flask
-# Import the helper gateway class
-from AfricasTalkingGateway import AfricasTalkingGateway, AfricasTalkingGatewayException 
+from africastalking.AfricasTalkingGateway import AfricasTalkingGateway, AfricasTalkingGatewayException 
 
 app = Flask(__name__)
 
