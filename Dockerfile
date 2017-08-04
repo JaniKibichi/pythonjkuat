@@ -8,5 +8,5 @@ RUN apt-get -y install python && \
 #install framework
 WORKDIR ussd/
 COPY . ussd/
-RUN cd ussd/ && pip install requirements.txt
+RUN cd ussd/ && pip install -r requirements.txt
 CMD ["python","sms.py"]
