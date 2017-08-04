@@ -12,7 +12,6 @@ def sms():
     to      = "+254787235065,+254708415904"
     message = "I'm a lumberjack and it's ok, I sleep all night and I work all day"
     gateway = AfricasTalkingGateway(username, apikey)
-
     try:
     
         results = gateway.sendMessage(to, message)
@@ -25,10 +24,10 @@ def sms():
                                                                 recipient['cost'])
     except AfricasTalkingGatewayException, e:
         print 'Encountered an error while sending: %s' % str(e)
-        
+
     return "hello world"
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)
 
